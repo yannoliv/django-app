@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="basic.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="dropzone.css" media="screen" />
+    <script src="./dropzone.js"></script>
+</head>
+<body>
+
+
+    <form action="/file-upload"
+          class="dropzone"
+          id="my-awesome-dropzone"></form>
+
+          <div id="myid"></div>
+
+    <script>
+            var myDropzone = new Dropzone("div#myId", { url: "/file/post"});
+    </script>
+    
+</body>
+</html>
